@@ -27,7 +27,7 @@ describe("Grading suite", function() {
     ];
     let message = new Message('TA power', commands);
     let response = rover.receiveMessage(message);
-    expect(response.message).toEqual('TA power');
+    expect(response.name).toEqual('TA power');
     expect(response.results[0].completed).toBeTrue;
     expect(response.results[1].roverStatus.position).toEqual(4321);
     expect(response.results[2].completed).toBeTrue;
